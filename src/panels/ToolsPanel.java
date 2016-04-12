@@ -84,6 +84,13 @@ public class ToolsPanel extends ScrollPane{
 		Button attribute = new Button();
 		attribute.setText(messages.getString("attribute"));
 		attribute.setMaxWidth(Double.MAX_VALUE);
+		attribute.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				DrawingEvent.type_model = 2;
+				
+			}
+		});
 		attribute.setPadding(padding);
 		
 		Button specialization = new Button();
